@@ -16,7 +16,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    keywords='keyword1 keyword2',
     install_requires=[
         'dependency1>=1.0',
         'dependency2>=2.0',

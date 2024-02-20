@@ -1,0 +1,2 @@
+def chuj():
+    return "chuj"
