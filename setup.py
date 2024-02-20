@@ -10,14 +10,14 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/staler444/busbull',
     license='MIT',
-    packages=find_packages(),
+    packages=['busbull'],
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
     install_requires=[
-        'dependency1>=1.0',
-        'dependency2>=2.0',
+        #'dependency1>=1.0',
+        #'dependency2>=2.0',
     ],
 )
