@@ -10,14 +10,19 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/staler444/busbull',
     license='MIT',
-    packages=['busbull'],
+    packages=find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-    ],
+    ],    
+    entry_points={
+        'console_scripts': [
+            'busbull = busbull.main:main',
+        ],
+    },
     install_requires=[
-        #'dependency1>=1.0',
-        #'dependency2>=2.0',
+        'requests>=2.31.0',
+        'tqdm>=4.66.2'
     ],
 )
