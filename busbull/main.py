@@ -62,14 +62,14 @@ def main():
     if args.brigade:
         fetch_config["brigade"] = args.brigade
 
-    bus_loader._start_gathering_data(
+    loader = bus_loader.BusLoader(
             fetch_config=fetch_config,
             data_file=file_base_name+".txt",
             error_file=file_base_name+"_logs.txt",
+            url=args.url)
+    loader.start_gathering_data(
             tics=time_in_minutes*60//sleep_time,
-            url=args.url,
             sleep_time=sleep_time)
-
 
 if __name__ == '__main__':
     main()
