@@ -36,7 +36,7 @@ class BusLoader():
                     f.write(json.dumps(bus_info))
                     f.write("\n")
         else:
-            with open(self.error_file, 'a'):
+            with open(self.error_file, 'a') as f:
                 f.write('Request failed with status code:', response.status_code)
             print('Request failed with status code:', response.status_code)
 
